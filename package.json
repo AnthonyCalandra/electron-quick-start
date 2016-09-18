@@ -1,0 +1,36 @@
+{
+  "name": "electron-quick-start",
+  "version": "0.1.0",
+  "description": "Get started with Electron quickly, using webpack, react, hot module reloading, and electron-packager.",
+  "main": "./main.js",
+  "scripts": {
+    "webpack-server": "webpack-dev-server --hot --inline",
+    "webpack": "webpack",
+    "start": "cross-env HOT=1 electron main.js",
+    "electron": "electron main.js",
+    "packager": "npm run webpack && electron-packager . MyApp"
+  },
+  "author": "Anthony Calandra",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.1.21",
+    "babel-loader": "^6.1.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "copy-webpack-plugin": "^0.2.0",
+    "cross-env": "^2.0.1",
+    "css-loader": "^0.25.0",
+    "electron": "^1.3.4",
+    "electron-packager": "^8.0.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.12.6",
+    "webpack-dev-server": "^1.12.1"
+  }
+}
